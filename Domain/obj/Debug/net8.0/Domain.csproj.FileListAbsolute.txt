@@ -1,0 +1,12 @@
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Domain\bin\Debug\net8.0\Domain.deps.json
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Domain\bin\Debug\net8.0\Domain.dll
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Domain\bin\Debug\net8.0\Domain.pdb
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Domain\obj\Debug\net8.0\Domain.dll
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Domain\obj\Debug\net8.0\refint\Domain.dll
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Domain\obj\Debug\net8.0\Domain.pdb
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Domain\obj\Debug\net8.0\ref\Domain.dll

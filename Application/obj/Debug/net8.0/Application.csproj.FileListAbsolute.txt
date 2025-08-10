@@ -1,0 +1,17 @@
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\bin\Debug\net8.0\Application.deps.json
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\bin\Debug\net8.0\Application.dll
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\bin\Debug\net8.0\Application.pdb
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\bin\Debug\net8.0\Domain.dll
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\bin\Debug\net8.0\Persistence.dll
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\bin\Debug\net8.0\Domain.pdb
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\bin\Debug\net8.0\Persistence.pdb
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\obj\Debug\net8.0\Applicat.44B5EDA2.Up2Date
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\obj\Debug\net8.0\Application.dll
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\obj\Debug\net8.0\refint\Application.dll
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\obj\Debug\net8.0\Application.pdb
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\obj\Debug\net8.0\ref\Application.dll
