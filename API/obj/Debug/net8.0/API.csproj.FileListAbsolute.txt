@@ -178,3 +178,9 @@ D:\React\Complete guide to building an app with .Net Core and React\Project\even
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\obj\Debug\net8.0\API.pdb
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\obj\Debug\net8.0\API.genruntimeconfig.cache
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\obj\Debug\net8.0\ref\API.dll
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\obj\Debug\net8.0\API.sourcelink.json
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\bin\Debug\net8.0\AutoMapper.dll
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\bin\Debug\net8.0\FluentValidation.dll
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\bin\Debug\net8.0\MediatR.dll
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\bin\Debug\net8.0\MediatR.Contracts.dll

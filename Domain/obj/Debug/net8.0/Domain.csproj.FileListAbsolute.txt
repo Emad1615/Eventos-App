@@ -10,3 +10,4 @@ D:\React\Complete guide to building an app with .Net Core and React\Project\even
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Domain\obj\Debug\net8.0\refint\Domain.dll
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Domain\obj\Debug\net8.0\Domain.pdb
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Domain\obj\Debug\net8.0\ref\Domain.dll
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Domain\obj\Debug\net8.0\Domain.sourcelink.json

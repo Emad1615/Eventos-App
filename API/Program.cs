@@ -1,4 +1,6 @@
-﻿using Domain;
+﻿using Application.Core;
+using AutoMapper;
+using Domain;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -72,6 +74,7 @@ builder.Services.ConfigureApplicationCookie(options =>
 //});
 #endregion
 builder.Services.AddAuthorization();
+builder.Services.AddAutoMapper(x => x.AddMaps(typeof(MappingProfiles).Assembly));
 
 var app = builder.Build();
 
