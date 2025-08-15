@@ -6,7 +6,12 @@ D:\React\Complete guide to building an app with .Net Core and React\Project\even
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\bin\Debug\net8.0\API.runtimeconfig.json
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\bin\Debug\net8.0\API.dll
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\bin\Debug\net8.0\API.pdb
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\bin\Debug\net8.0\AutoMapper.dll
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\bin\Debug\net8.0\FluentValidation.dll
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\bin\Debug\net8.0\Humanizer.dll
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\bin\Debug\net8.0\MediatR.dll
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\bin\Debug\net8.0\MediatR.Contracts.dll
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
@@ -163,6 +168,7 @@ D:\React\Complete guide to building an app with .Net Core and React\Project\even
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\obj\Debug\net8.0\API.csproj.CoreCompileInputs.cache
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\obj\Debug\net8.0\API.MvcApplicationPartsAssemblyInfo.cs
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\obj\Debug\net8.0\API.MvcApplicationPartsAssemblyInfo.cache
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\obj\Debug\net8.0\API.sourcelink.json
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\obj\Debug\net8.0\rjimswa.dswa.cache.json
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
@@ -178,9 +184,3 @@ D:\React\Complete guide to building an app with .Net Core and React\Project\even
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\obj\Debug\net8.0\API.pdb
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\obj\Debug\net8.0\API.genruntimeconfig.cache
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\obj\Debug\net8.0\ref\API.dll
-D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\obj\Debug\net8.0\API.sourcelink.json
-D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\bin\Debug\net8.0\AutoMapper.dll
-D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\bin\Debug\net8.0\FluentValidation.dll
-D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
-D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\bin\Debug\net8.0\MediatR.dll
-D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\API\bin\Debug\net8.0\MediatR.Contracts.dll

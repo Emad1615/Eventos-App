@@ -1,5 +1,8 @@
-﻿using Domain;
+﻿using Application.Core;
+using Domain;
+using MediatR;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -13,17 +16,30 @@ namespace API.Controllers
     public class BaseApiController() : ControllerBase
     {
         private IConfiguration? _config;
+        private IMediator? _mediator;
+
+        protected IMediator Mediator => _mediator
+            ?? HttpContext.RequestServices.GetService<IMediator>()
+            ?? throw new InvalidOperationException("IMediator  service unavailable ");
         protected IConfiguration Config => _config
             ?? HttpContext.RequestServices.GetService<IConfiguration>()
             ?? throw new InvalidOperationException("Iconfiguration service unavailable");
+
+        protected string UserId => User.FindFirstValue(ClaimTypes.NameIdentifier)!;
+        protected ActionResult HandleResult<T>(Result<T> result)
+        {
+            if (result.Value is not null && result.IsSuccess) return Ok(result.Value);
+            if (!result.IsSuccess && result.Status == 404) return NotFound();
+            return BadRequest(result.Error);
+        }
+        
         protected string GenerateJwtToken(UserApplication user)
         {
-            var claims = new List<Claim>()
-     {
-         new Claim(ClaimTypes.NameIdentifier,user.Id),
-         new Claim(ClaimTypes.Name,user.UserName!),
-         new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString())
-     };
+            var claims = new List<Claim>(){
+                 new Claim(ClaimTypes.NameIdentifier,user.Id),
+                 new Claim(ClaimTypes.Name,user.UserName!),
+                 new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString())
+            };
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Config["Jwt:Key"]!));
             var cred = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
             var expires = DateTime.UtcNow.AddMinutes(double.Parse(Config["Jwt:ExpireMinutes"]!));

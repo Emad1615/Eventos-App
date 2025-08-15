@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AB701978-AA97-4B5D-88A0-6A4F1E8B26D0}|Application\\Application.csproj|d:\\react\\complete guide to building an app with .net core and react\\project\\eventos\\application\\activities\\queries\\getactivitylist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB701978-AA97-4B5D-88A0-6A4F1E8B26D0}|Application\\Application.csproj|solutionrelative:application\\activities\\queries\\getactivitylist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D77F4609-1928-4278-BEAF-DE25F08D5158}|API\\API.csproj|d:\\react\\complete guide to building an app with .net core and react\\project\\eventos\\api\\controllers\\activitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D77F4609-1928-4278-BEAF-DE25F08D5158}|API\\API.csproj|solutionrelative:api\\controllers\\activitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB701978-AA97-4B5D-88A0-6A4F1E8B26D0}|Application\\Application.csproj|d:\\react\\complete guide to building an app with .net core and react\\project\\eventos\\application\\activities\\commands\\editactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB701978-AA97-4B5D-88A0-6A4F1E8B26D0}|Application\\Application.csproj|solutionrelative:application\\activities\\commands\\editactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB701978-AA97-4B5D-88A0-6A4F1E8B26D0}|Application\\Application.csproj|d:\\react\\complete guide to building an app with .net core and react\\project\\eventos\\application\\activities\\queries\\getactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB701978-AA97-4B5D-88A0-6A4F1E8B26D0}|Application\\Application.csproj|solutionrelative:application\\activities\\queries\\getactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB701978-AA97-4B5D-88A0-6A4F1E8B26D0}|Application\\Application.csproj|d:\\react\\complete guide to building an app with .net core and react\\project\\eventos\\application\\activities\\commands\\createactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB701978-AA97-4B5D-88A0-6A4F1E8B26D0}|Application\\Application.csproj|solutionrelative:application\\activities\\commands\\createactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB701978-AA97-4B5D-88A0-6A4F1E8B26D0}|Application\\Application.csproj|d:\\react\\complete guide to building an app with .net core and react\\project\\eventos\\application\\activities\\commands\\deleteactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB701978-AA97-4B5D-88A0-6A4F1E8B26D0}|Application\\Application.csproj|solutionrelative:application\\activities\\commands\\deleteactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,55 +29,33 @@
               "Name": "ST:2:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GetActivity.cs",
-              "DocumentMoniker": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\Application\\activities\\Queries\\GetActivity.cs",
-              "RelativeDocumentMoniker": "Application\\activities\\Queries\\GetActivity.cs",
-              "ToolTip": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\Application\\activities\\Queries\\GetActivity.cs",
-              "RelativeToolTip": "Application\\activities\\Queries\\GetActivity.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T20:25:18.744Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:950712487:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GetActivityList.cs",
-              "DocumentMoniker": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\Application\\activities\\Queries\\GetActivityList.cs",
-              "RelativeDocumentMoniker": "Application\\activities\\Queries\\GetActivityList.cs",
-              "ToolTip": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\Application\\activities\\Queries\\GetActivityList.cs",
-              "RelativeToolTip": "Application\\activities\\Queries\\GetActivityList.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAABYAAAA0AAAAAAAAAA==",
+              "Title": "ActivitiesController.cs",
+              "DocumentMoniker": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\API\\Controllers\\ActivitiesController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\ActivitiesController.cs",
+              "ToolTip": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\API\\Controllers\\ActivitiesController.cs",
+              "RelativeToolTip": "API\\Controllers\\ActivitiesController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T20:11:20.53Z",
+              "WhenOpened": "2025-08-15T17:28:33.869Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EditActivity.cs",
-              "DocumentMoniker": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\Application\\activities\\Commands\\EditActivity.cs",
-              "RelativeDocumentMoniker": "Application\\activities\\Commands\\EditActivity.cs",
-              "ToolTip": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\Application\\activities\\Commands\\EditActivity.cs",
-              "RelativeToolTip": "Application\\activities\\Commands\\EditActivity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Title": "DeleteActivity.cs",
+              "DocumentMoniker": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\Application\\activities\\Commands\\DeleteActivity.cs",
+              "RelativeDocumentMoniker": "Application\\activities\\Commands\\DeleteActivity.cs",
+              "ToolTip": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\Application\\activities\\Commands\\DeleteActivity.cs",
+              "RelativeToolTip": "Application\\activities\\Commands\\DeleteActivity.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T20:07:57.328Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CreateActivity.cs",
-              "DocumentMoniker": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\Application\\activities\\Commands\\CreateActivity.cs",
-              "RelativeDocumentMoniker": "Application\\activities\\Commands\\CreateActivity.cs",
-              "ToolTip": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\Application\\activities\\Commands\\CreateActivity.cs",
-              "RelativeToolTip": "Application\\activities\\Commands\\CreateActivity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-12T20:30:16.577Z",
+              "WhenOpened": "2025-08-15T15:46:02.282Z",
               "EditorCaption": ""
             }
           ]

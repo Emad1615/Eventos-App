@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace Application.activities.Validators
 {
-    public class CreateActivityValidator:BaseActivityValidator<CreateActivity.Command,CreateActivityDTO>
+    public class CreateActivityValidator : BaseActivityValidator<CreateActivity.Command, CreateActivityDTO>
     {
-        public CreateActivityValidator():base(x=>x.activityDTO)
+        public CreateActivityValidator() : base(x => x.activityDTO)
         {
-            
+
         }
     }
 }

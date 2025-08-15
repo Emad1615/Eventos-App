@@ -10,9 +10,9 @@ D:\React\Complete guide to building an app with .Net Core and React\Project\even
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\obj\Debug\net8.0\Application.sourcelink.json
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\obj\Debug\net8.0\Applicat.44B5EDA2.Up2Date
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\obj\Debug\net8.0\Application.dll
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\obj\Debug\net8.0\refint\Application.dll
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\obj\Debug\net8.0\Application.pdb
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\obj\Debug\net8.0\ref\Application.dll
-D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Application\obj\Debug\net8.0\Application.sourcelink.json

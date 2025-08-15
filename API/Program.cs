@@ -1,15 +1,15 @@
-﻿using Application.Core;
-using AutoMapper;
+﻿using API.middleware;
+using Application.activities.Queries;
+using Application.activities.Validators;
+using Application.Core;
 using Domain;
-using Microsoft.AspNetCore.Authentication.Cookies;
+using FluentValidation;
+using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
-using Microsoft.IdentityModel.Tokens;
 using Persistence;
-using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
@@ -17,16 +17,35 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers(options =>
 {
+    //add authorization filter instead add it manually at controller
     var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
     options.Filters.Add(new AuthorizeFilter(policy));
 });
-
-//Add EntityFramework db context
+/*******************Add Entity framework service configuration Cookies and jwt bearer ******************/
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
-// Add Identity 
+/*******************Add Cors for client side app ******************/
+builder.Services.AddCors();
+
+/*******************Add MediatR service configuration******************/
+builder.Services.AddMediatR(options =>
+{
+    options.RegisterServicesFromAssemblyContaining<GetActivityList.Handler>();
+    options.AddBehavior(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+});
+
+/*******************Add auto mapper service configuration******************/
+builder.Services.AddAutoMapper(options => options.AddMaps(typeof(MappingProfiles).Assembly));
+
+/*******************Add Fluent validations service configuration******************/
+builder.Services.AddValidatorsFromAssemblyContaining<CreateActivityValidator>();
+
+/*******************Add dependency injection for exception midlleware******************/
+builder.Services.AddTransient<ExceptionMiddleware>();
+
+/*******************Add Idebtity service configuration Cookies and jwt bearer ******************/
 builder.Services.AddIdentityApiEndpoints<UserApplication>(options =>
 {
     options.User.RequireUniqueEmail = true;
@@ -38,6 +57,7 @@ builder.Services.AddIdentityApiEndpoints<UserApplication>(options =>
     options.Password.RequiredLength = 4;
 }).AddRoles<IdentityRole>()
   .AddEntityFrameworkStores<AppDbContext>();
+
 builder.Services.ConfigureApplicationCookie(options =>
 {
     options.Cookie.SameSite=SameSiteMode.None;
@@ -73,11 +93,13 @@ builder.Services.ConfigureApplicationCookie(options =>
 //    };
 //});
 #endregion
+
 builder.Services.AddAuthorization();
-builder.Services.AddAutoMapper(x => x.AddMaps(typeof(MappingProfiles).Assembly));
+
 
 var app = builder.Build();
 
+app.UseMiddleware<ExceptionMiddleware>();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -85,7 +107,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+app.UseCors(options =>
+{
+    options.WithOrigins(builder.Configuration.GetValue<string>("frontend_url") ?? "" ?? "")
+    .AllowAnyHeader()
+    .AllowAnyMethod()
+    .AllowCredentials();
+});
 
 app.UseAuthentication();
 app.UseAuthorization();

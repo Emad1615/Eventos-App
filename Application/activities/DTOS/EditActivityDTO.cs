@@ -3,6 +3,8 @@ namespace Application.activities.DTOS
 {
     public class EditActivityDTO:BaseActivityDTO
     {
-        public int ID { get; set; }
+        public string ID { get; set; } = string.Empty;
+        public string UpdatedUserID { get; set; } = string.Empty;
+
     }
 }

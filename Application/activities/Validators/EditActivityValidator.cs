@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace Application.activities.Validators
 {
-    public class EditActivityValidator:BaseActivityValidator<EditActivity.Command,EditActivityDTO>
+    public class EditActivityValidator : BaseActivityValidator<EditActivity.Command, EditActivityDTO>
     {
-        public EditActivityValidator():base(x=>x.activityDTO)
+        public EditActivityValidator() : base(x => x.activityDTO)
         {
             RuleFor(x => x.activityDTO.ID).NotEmpty().WithMessage("Activity Id is required");
         }

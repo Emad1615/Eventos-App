@@ -9,10 +9,10 @@ D:\React\Complete guide to building an app with .Net Core and React\Project\even
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfoInputs.cache
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfo.cs
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Persistence\obj\Debug\net8.0\Persistence.csproj.CoreCompileInputs.cache
+D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Persistence\obj\Debug\net8.0\Persistence.sourcelink.json
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Persistence\obj\Debug\net8.0\Persiste.61C28332.Up2Date
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Persistence\obj\Debug\net8.0\Persistence.dll
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Persistence\obj\Debug\net8.0\refint\Persistence.dll
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Persistence\obj\Debug\net8.0\Persistence.pdb
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Persistence\obj\Debug\net8.0\Persistence.genruntimeconfig.cache
 D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Persistence\obj\Debug\net8.0\ref\Persistence.dll
-D:\React\Complete guide to building an app with .Net Core and React\Project\eventos\Persistence\obj\Debug\net8.0\Persistence.sourcelink.json

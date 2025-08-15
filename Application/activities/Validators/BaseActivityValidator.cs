@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Application.activities.Validators
 {
-    public class BaseActivityValidator<T,TDO>:AbstractValidator<T> where TDO :BaseActivityDTO
+    public class BaseActivityValidator<T, TDO> : AbstractValidator<T> where TDO : BaseActivityDTO
     {
-        public BaseActivityValidator(Func<T,TDO> selector)
+        public BaseActivityValidator(Func<T, TDO> selector)
         {
             RuleFor(x => selector(x).Title).NotEmpty()
                 .WithMessage("Activity Title is required").MaximumLength(100)
