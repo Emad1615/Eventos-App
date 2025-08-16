@@ -1063,6 +1063,56 @@
         },
         "additionalProperties": false
       },
+      "RefreshToken": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "token": {
+            "type": "string",
+            "nullable": true
+          },
+          "expiresDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "isExpire": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "createdDateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "createdByIP": {
+            "type": "string",
+            "nullable": true
+          },
+          "revokedDateTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "revokedByIP": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "userId": {
+            "type": "string",
+            "nullable": true
+          },
+          "user": {
+            "$ref": "#/components/schemas/UserApplication"
+          }
+        },
+        "additionalProperties": false
+      },
       "RegisterDTO": {
         "required": [
           "email",
@@ -1333,6 +1383,13 @@
           },
           "geneder": {
             "type": "boolean"
+          },
+          "refreshTokens": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RefreshToken"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false

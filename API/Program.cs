@@ -5,11 +5,15 @@ using Application.Core;
 using Domain;
 using FluentValidation;
 using MediatR;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Persistence;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
@@ -57,41 +61,45 @@ builder.Services.AddIdentityApiEndpoints<UserApplication>(options =>
     options.Password.RequiredLength = 4;
 }).AddRoles<IdentityRole>()
   .AddEntityFrameworkStores<AppDbContext>();
-
-builder.Services.ConfigureApplicationCookie(options =>
-{
-    options.Cookie.SameSite=SameSiteMode.None;
-    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
-    options.ExpireTimeSpan = TimeSpan.FromDays(7);
-    options.SlidingExpiration = true;
-});
-#region  handle Jwt and cookie  configuration  once 
-//var keyBytes = Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"] ?? "EMADISMAILMOHAMMEDDOIN57600181095FARIDADALIDA");
-//builder.Services.AddAuthentication(options =>
+/********************Configure Application Cookie**********************/
+//builder.Services.ConfigureApplicationCookie(options =>
 //{
-//    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-//    options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-//}).AddCookie(options =>
-//{
-//    options.Cookie.SameSite = SameSiteMode.None;
+//    options.Cookie.SameSite=SameSiteMode.None;
 //    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
 //    options.ExpireTimeSpan = TimeSpan.FromDays(7);
 //    options.SlidingExpiration = true;
-//})
-//.AddJwtBearer(options =>
-//{
-//    options.TokenValidationParameters = new TokenValidationParameters
-//    {
-//        ValidateIssuer = true,
-//        ValidateAudience = true,
-//        ValidateLifetime = true,
-//        ValidateIssuerSigningKey = true,
-//        ValidIssuer = builder.Configuration["Jwt:Issure"],
-//        ValidAudience = builder.Configuration["Jwt:Audience"],
-//        IssuerSigningKey = new SymmetricSecurityKey(keyBytes),
-//        ClockSkew = TimeSpan.FromMinutes(5), // فترة السماح  اللي بتراعي فرق التوقيت بين السرفرات الاجهزة اللي بتصدر التوكين واللي بتتحقق منه 
-//    };
 //});
+#region  handle Jwt and cookie  configuration  once 
+var keyBytes = Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"] ?? "EMADISMAILMOHAMMEDDOIN57600181095FARIDADALIDA");
+builder.Services.AddAuthentication(options =>
+{
+
+    //options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    //options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+
+}).AddCookie(options =>
+{
+    options.Cookie.SameSite = SameSiteMode.None;
+    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+    options.ExpireTimeSpan = TimeSpan.FromDays(7);
+    options.SlidingExpiration = true;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = builder.Configuration["Jwt:Issure"],
+        ValidAudience = builder.Configuration["Jwt:Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(keyBytes),
+        ClockSkew = TimeSpan.FromMinutes(5), // فترة السماح  اللي بتراعي فرق التوقيت بين السرفرات الاجهزة اللي بتصدر التوكين واللي بتتحقق منه 
+    };
+});
 #endregion
 
 builder.Services.AddAuthorization();

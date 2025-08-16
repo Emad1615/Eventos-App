@@ -13,6 +13,7 @@ namespace Domain
         public string? ImageUrl { get; set; } = string.Empty;
         public string? Bio { get; set; } = string.Empty;
         public DateTime? BirthDate { get; set; }
-        public bool Geneder { get; set; }=true;  // 1 Male , 0 Female
+        public bool Geneder { get; set; } = true;  // 1 Male , 0 Female
+        public ICollection<RefreshToken> RefreshTokens { get; set; }
     }
 }

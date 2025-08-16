@@ -11,5 +11,6 @@ namespace Persistence
         {
         }
         public DbSet<Activity> activities { get; set; }
+        public DbSet<RefreshToken> refreshTokens { get; set; }
     }
 }

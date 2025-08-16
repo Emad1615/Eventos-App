@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace API.Controllers
@@ -32,7 +33,7 @@ namespace API.Controllers
             if (!result.IsSuccess && result.Status == 404) return NotFound();
             return BadRequest(result.Error);
         }
-        
+
         protected string GenerateJwtToken(UserApplication user)
         {
             var claims = new List<Claim>(){
@@ -51,6 +52,39 @@ namespace API.Controllers
                     signingCredentials: cred
                 );
             return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
+        protected RefreshToken GenerateRefreshToken()
+        {
+            var randomBytes = new byte[64];
+            var rng = RandomNumberGenerator.Create();
+            rng.GetBytes(randomBytes);
+            var token = Convert.ToBase64String(randomBytes);
+            return new RefreshToken
+            {
+                Token = token,
+                ExpiresDate = DateTime.UtcNow.AddDays(7),
+                CreatedByIP = GetIpAddress(),
+                CreatedDateTime = DateTime.UtcNow,
+            };
+        }
+
+        protected string GetIpAddress()
+        {
+            if (Request.Headers.ContainsKey("X-Forwarded-For"))
+                return Request.Headers["X-Forwarded-For"]!;
+            return HttpContext.Connection.RemoteIpAddress?.MapToIPv4().ToString()!;
+        }
+        protected void SetCookie(string token)
+        {
+            var cookieOption = new CookieOptions()
+            {
+                HttpOnly = true,
+                Expires = DateTime.UtcNow.AddDays(7),
+                SameSite = SameSiteMode.None,
+                Secure = true
+            };
+            Response.Cookies.Append("refreshToken", token, cookieOption);
         }
     }
 }
