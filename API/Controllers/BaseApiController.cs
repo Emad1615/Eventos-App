@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using Persistence;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
@@ -18,7 +19,11 @@ namespace API.Controllers
     {
         private IConfiguration? _config;
         private IMediator? _mediator;
+        private AppDbContext _db;
 
+        protected AppDbContext db => _db
+            ?? HttpContext.RequestServices.GetService<AppDbContext>()
+            ?? throw new InvalidOperationException("AppDbContext service unavailable");
         protected IMediator Mediator => _mediator
             ?? HttpContext.RequestServices.GetService<IMediator>()
             ?? throw new InvalidOperationException("IMediator  service unavailable ");

@@ -120,6 +120,30 @@
         }
       }
     },
+    "/api/Account/refresh-token": {
+      "get": {
+        "tags": [
+          "Account"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Account/revoke-refreshToken": {
+      "get": {
+        "tags": [
+          "Account"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Account/user-info-jwt": {
       "get": {
         "tags": [
@@ -1096,6 +1120,10 @@
             "nullable": true
           },
           "revokedByIP": {
+            "type": "string",
+            "nullable": true
+          },
+          "replacedByToken": {
             "type": "string",
             "nullable": true
           },

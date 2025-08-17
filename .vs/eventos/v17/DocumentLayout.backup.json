@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D77F4609-1928-4278-BEAF-DE25F08D5158}|API\\API.csproj|d:\\react\\complete guide to building an app with .net core and react\\project\\eventos\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D77F4609-1928-4278-BEAF-DE25F08D5158}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D77F4609-1928-4278-BEAF-DE25F08D5158}|API\\API.csproj|d:\\react\\complete guide to building an app with .net core and react\\project\\eventos\\api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D77F4609-1928-4278-BEAF-DE25F08D5158}|API\\API.csproj|solutionrelative:api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D77F4609-1928-4278-BEAF-DE25F08D5158}|API\\API.csproj|d:\\react\\complete guide to building an app with .net core and react\\project\\eventos\\api\\controllers\\baseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D77F4609-1928-4278-BEAF-DE25F08D5158}|API\\API.csproj|solutionrelative:api\\controllers\\baseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D77F4609-1928-4278-BEAF-DE25F08D5158}|API\\API.csproj|d:\\react\\complete guide to building an app with .net core and react\\project\\eventos\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D77F4609-1928-4278-BEAF-DE25F08D5158}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB56CC77-3F40-4CC6-88AC-103281F75167}|Domain\\Domain.csproj|d:\\react\\complete guide to building an app with .net core and react\\project\\eventos\\domain\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB56CC77-3F40-4CC6-88AC-103281F75167}|Domain\\Domain.csproj|solutionrelative:domain\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DB56CC77-3F40-4CC6-88AC-103281F75167}|Domain\\Domain.csproj|d:\\react\\complete guide to building an app with .net core and react\\project\\eventos\\domain\\userapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DB56CC77-3F40-4CC6-88AC-103281F75167}|Domain\\Domain.csproj|solutionrelative:domain\\userapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DB56CC77-3F40-4CC6-88AC-103281F75167}|Domain\\Domain.csproj|d:\\react\\complete guide to building an app with .net core and react\\project\\eventos\\domain\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DB56CC77-3F40-4CC6-88AC-103281F75167}|Domain\\Domain.csproj|solutionrelative:domain\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D77F4609-1928-4278-BEAF-DE25F08D5158}|API\\API.csproj|d:\\react\\complete guide to building an app with .net core and react\\project\\eventos\\api\\controllers\\baseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D77F4609-1928-4278-BEAF-DE25F08D5158}|API\\API.csproj|solutionrelative:api\\controllers\\baseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +30,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1008288135:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
@@ -41,20 +45,29 @@
               "Name": "ST:2:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:950712487:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AccountController.cs",
               "DocumentMoniker": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\API\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\AccountController.cs",
               "ToolTip": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\API\\Controllers\\AccountController.cs",
               "RelativeToolTip": "API\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwEEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAkwFcAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T16:13:59.804Z",
+              "WhenOpened": "2025-08-16T17:15:17.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BaseApiController.cs",
+              "DocumentMoniker": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\API\\Controllers\\BaseApiController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\BaseApiController.cs",
+              "ToolTip": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\API\\Controllers\\BaseApiController.cs",
+              "RelativeToolTip": "API\\Controllers\\BaseApiController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA9wD0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T15:29:55.259Z",
               "EditorCaption": ""
             },
             {
@@ -65,46 +78,33 @@
               "RelativeDocumentMoniker": "Domain\\UserApplication.cs",
               "ToolTip": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\Domain\\UserApplication.cs",
               "RelativeToolTip": "Domain\\UserApplication.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-16T16:07:15.188Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "RefreshToken.cs",
               "DocumentMoniker": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\Domain\\RefreshToken.cs",
               "RelativeDocumentMoniker": "Domain\\RefreshToken.cs",
               "ToolTip": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\Domain\\RefreshToken.cs",
               "RelativeToolTip": "Domain\\RefreshToken.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-16T15:31:18.571Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BaseApiController.cs",
-              "DocumentMoniker": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\API\\Controllers\\BaseApiController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\BaseApiController.cs",
-              "ToolTip": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\API\\Controllers\\BaseApiController.cs",
-              "RelativeToolTip": "API\\Controllers\\BaseApiController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwDMAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T15:29:55.259Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\API\\Program.cs",
               "RelativeDocumentMoniker": "API\\Program.cs",
               "ToolTip": "D:\\React\\Complete guide to building an app with .Net Core and React\\Project\\eventos\\API\\Program.cs",
               "RelativeToolTip": "API\\Program.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAAAF4AAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAE0AAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-16T15:27:50.704Z",
               "EditorCaption": ""

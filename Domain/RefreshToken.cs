@@ -8,7 +8,7 @@ namespace Domain
 {
     public class RefreshToken
     {
-        public string ID { get; set; }
+        public string ID { get; set; } = Guid.NewGuid().ToString();
         public string Token { get; set; } = string.Empty;
         public DateTime ExpiresDate { get; set; }
         public bool IsExpire => DateTime.UtcNow >= ExpiresDate;
@@ -16,9 +16,10 @@ namespace Domain
         public string CreatedByIP { get; set; } = string.Empty;
         public DateTime? RevokedDateTime { get; set; }
         public string RevokedByIP { get; set; } = string.Empty;
+        public string ReplacedByToken { get; set; } = string.Empty;
         public bool IsActive => RevokedDateTime == null && !IsExpire;
         //FK To User
         public string UserId { get; set; } = string.Empty;
-        public UserApplication User { get; set; }   
+        public UserApplication User { get; set; }
     }
 }
